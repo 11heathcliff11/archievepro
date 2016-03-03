@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+
+<style>
+h2 {position:relative;
+	left:80px;}
+.navbar { position: relative;
+		  left:1000px;
+		  word-spacing: 30px;}
+.main { position: relative;
+		left:600px;
+		top:100px;}		  
+</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<ul>
+                <li1> About </li1>
+                <li2> <a href="login.html">Logout </a>  </li2>
+                <li3> Help </li3>
+			</ul>
+		</div>
+	</div>
+<div class="main">
+	<div class="container">     
+        <h1> ADD RECORDS </h1>
+        	<form action="addData.php" method="post">
+            <select name="Title">
+                 <option value="Mr.">Mr.</option>
+                 <option value="Mrs.">Mrs.</option>
+             </select>
+                <p>Name <input type="text" name="cName" id="cName" autofocus min="3" max="50"  required></p>
+                <p>Middle Name <input type="text" name="cMname" id="cMname"min="3" max="50" required></p>
+                <p>Last Name <input type="text" name="cLname" id="cLname" maxlength="100" required></p>
+                <p>Age <input type="number" name="age" maxlength="99" required></p>
+                <p> Select gender  <input type="radio" name="gender" value="male"> Male<br>
+								   <input type="radio" name="gender" value="female" > Female<br></p>
+                <p>Current Address <input type="text" size="40" name="crntaddrs"  id="crntaddrs"autofocus maxlength="1000" required></p>
+                <p>Permanent Address <input type="text" size="40" name="username" autofocus maxlength="1000" required></p>
+                <p>Father's Name <input type="text" name="username" autofocus maxlength="100" required></p>
+                <p>Mother's Name <input type="text" name="username" autofocus maxlength="100" required></p>
+                <p>Contact No. <input type="tel" name="contact no." maxlength="10" required></p> 
+                <p>E-mail address <input type="email" name="email" autofocus maxlength="1000" required placeholder="Please enter email address" size="50" ></p>
+                <p >Case Details <input type="text" name="case details"  maxlength="10000" size="100" height="40" width="400" spellcheck="true" required></p>
+                <p>Date of Start <input type="date" name="case start" required></p>
+                
+            
+                <input type="submit" value="Save">
+
+ 
+     
+
+            </form>
+	</div>
+</div>        
+
+</body>
+</html>
+
+
+
+
+
+
